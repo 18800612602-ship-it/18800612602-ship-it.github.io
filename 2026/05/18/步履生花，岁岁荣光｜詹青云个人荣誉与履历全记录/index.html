@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="User226">
+
+
+
+
+
+<title>步履生花，岁岁荣光｜詹青云个人荣誉与履历全记录 | Hexo</title>
+
+
+
+    <link rel="icon" href="/PhStudent.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const pagebody = document.getElementsByTagName('body')[0]
+
+            function setTheme(status) {
+
+                if (status === 'dark') {
+                    window.sessionStorage.theme = 'dark'
+                    pagebody.classList.add('dark-theme');
+
+                } else if (status === 'light') {
+                    window.sessionStorage.theme = 'light'
+                    pagebody.classList.remove('dark-theme');
+                }
+            };
+
+            setTheme(window.sessionStorage.theme)
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Zhan&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                <a class="menu-item" href="/archives">Posts</a>
+                
+                <a class="menu-item" href="/category">Categories</a>
+                
+                <a class="menu-item" href="/tag">Tags</a>
+                
+                <a class="menu-item" href="/about">About</a>
+                
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Zhan&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">
+                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M4.5 17.27q-.213 0-.356-.145T4 16.768t.144-.356t.356-.143h15q.213 0 .356.144q.144.144.144.357t-.144.356t-.356.143zm0-4.77q-.213 0-.356-.144T4 11.999t.144-.356t.356-.143h15q.213 0 .356.144t.144.357t-.144.356t-.356.143zm0-4.77q-.213 0-.356-.143Q4 7.443 4 7.23t.144-.356t.356-.143h15q.213 0 .356.144T20 7.23t-.144.356t-.356.144z"/></svg>
+                    <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Symbols Light by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="m12 12.708l-5.246 5.246q-.14.14-.344.15t-.364-.15t-.16-.354t.16-.354L11.292 12L6.046 6.754q-.14-.14-.15-.344t.15-.364t.354-.16t.354.16L12 11.292l5.246-5.246q.14-.14.345-.15q.203-.01.363.15t.16.354t-.16.354L12.708 12l5.246 5.246q.14.14.15.345q.01.203-.15.363t-.354.16t-.354-.16z"/></svg>
+                </div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                <a class="menu-item" href="/archives">Posts</a>
+                
+                <a class="menu-item" href="/category">Categories</a>
+                
+                <a class="menu-item" href="/tag">Tags</a>
+                
+                <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.classList.contains("active")) {
+            toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        } else {
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">步履生花，岁岁荣光｜詹青云个人荣誉与履历全记录</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">User226</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">May 18, 2026&nbsp;&nbsp;10:00:18</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/Blog4/">Blog4</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h3 id="Walk-With-Grace-Shine-Through-Years-A-Full-Record-of-Zhan-Qingyun’s-Honors-Career-Journey"><a href="#Walk-With-Grace-Shine-Through-Years-A-Full-Record-of-Zhan-Qingyun’s-Honors-Career-Journey" class="headerlink" title="Walk With Grace, Shine Through Years|A Full Record of Zhan Qingyun’s Honors &amp; Career Journey"></a>Walk With Grace, Shine Through Years|A Full Record of Zhan Qingyun’s Honors &amp; Career Journey</h3><p>Throughout her journey, Zhan Qingyun has reaped abundant rewards through steady dedication. Every honor and every chapter of her career stands as the finest testament to her persistence and passion. Her achievements span academics, debate and professional fields. There is no stroke of instant luck, only the certainty of long-term accumulation. Behind every gleaming success lie daily self-discipline and relentless commitment.</p>
+<h3 id="I-Academic-Background-Forging-Ahead-Through-Diligent-Study"><a href="#I-Academic-Background-Forging-Ahead-Through-Diligent-Study" class="headerlink" title="I. Academic Background: Forging Ahead Through Diligent Study"></a>I. Academic Background: Forging Ahead Through Diligent Study</h3><ol>
+<li><p>Born into an ordinary family in Guizhou, she remained devoted to learning despite multiple school transfers. In the national college entrance examination, she ranked fifth in liberal arts across Guizhou Province with outstanding scores.</p>
+</li>
+<li><p>In 2008, she declined an admission offer from Peking University and chose the Department of Economics at the Chinese University of Hong Kong. She completed her undergraduate studies on a full scholarship, excelling academically while building comprehensive scholarly and personal capabilities.</p>
+</li>
+<li><p>After graduation, she ventured overseas boldly. Taking out a million-yuan loan, she pursued a Juris Doctor (JD) degree at Harvard Law School. Overcoming the pressures of studying abroad and heavy academic burdens, she earned her degree from this top-tier institution, attaining elite professional expertise. Remarkably, she repaid the entire million-yuan student loan independently within three years.</p>
+</li>
+</ol>
+<h3 id="II-Debate-Career-Wielding-Words-as-Weapons-Winning-Distinguished-Honors"><a href="#II-Debate-Career-Wielding-Words-as-Weapons-Winning-Distinguished-Honors" class="headerlink" title="II. Debate Career: Wielding Words as Weapons, Winning Distinguished Honors"></a>II. Debate Career: Wielding Words as Weapons, Winning Distinguished Honors</h3><ol>
+<li><p>In 2014, representing the Chinese University of Hong Kong at the 2nd International Chinese Language Debate Invitational, she helped her team claim the championship and won the Best Debater award individually, revealing her top-tier critical thinking prowess.</p>
+</li>
+<li><p>She competed in numerous prestigious international and Chinese debate tournaments. With her composed, insightful style and rigorous logic, she earned multiple titles of Best Debater and Outstanding Debater, establishing herself as a widely-recognized powerhouse in Chinese-language debate circles.</p>
+</li>
+<li><p>In 2019, she joined Season 6 of I Can I BB. With profound critical thinking, gentle yet powerful delivery and sound values, she advanced round after round to claim the season’s BBKing championship. Winning countless admirers, she became a benchmark of intellectual reasoning for the public.</p>
+</li>
+</ol>
+<h3 id="III-Professional-Development-Uniting-Knowledge-and-Action-Pursuing-Long-term-Growth"><a href="#III-Professional-Development-Uniting-Knowledge-and-Action-Pursuing-Long-term-Growth" class="headerlink" title="III. Professional Development: Uniting Knowledge and Action, Pursuing Long-term Growth"></a>III. Professional Development: Uniting Knowledge and Action, Pursuing Long-term Growth</h3><ol>
+<li><p>Following graduation, she joined a world-top law firm, specializing in legal practice. Drawing on her solid Harvard legal training and rigorous professionalism, she focuses on legal work and upholds her original career aspiration, earning wide industry recognition for her expertise.</p>
+</li>
+<li><p>She dedicates herself to content creation and intellectual sharing. Maintaining consistent reading and reflection habits, she produces numerous insightful, healing and profound perspectives on life and critical thinking. With positive values and a sober outlook, she has become an inspirational role model for contemporary youth.</p>
+</li>
+</ol>
+<h3 id="IV-Personal-Influence-Gentle-Power-That-Heals-Hearts"><a href="#IV-Personal-Influence-Gentle-Power-That-Heals-Hearts" class="headerlink" title="IV. Personal Influence: Gentle Power That Heals Hearts"></a>IV. Personal Influence: Gentle Power That Heals Hearts</h3><p>For years, Zhan Qingyun has gained widespread acclaim as an independent, clear-minded and resilient woman. She has won public recognition not through gimmicks or online clout, but through knowledge, vision and moral principles. Breaking stereotypes about high-achieving scholars, she shows the world that excellence can coexist with gentleness and poise, and self-awareness can radiate inherent light.</p>
+<p>Her life story tells every ordinary person: one’s background never defines their life, nor do circumstances limit their future. All seemingly effortless brilliance comes from years of steady accumulation; all natural composure stems from wholehearted dedication.<br>Nurturing herself year after year, blooming with every step forward - this is Zhan Qingyun. She seeks truth in academia, shines on debating stages, and forges her own radiant glory across the boundless landscape of life.</p>
+<p><em>一路走来，詹青云用踏实沉淀收获累累硕果，每一份荣誉、每一段履历，都是她坚持与热爱的最好见证。她的成就横跨学业、辩论、职业多个领域，没有一蹴而就的幸运，只有厚积薄发的笃定，所有光鲜的背后，都是日复一日的自律与深耕。</em></p>
+<p><em>一、学业履历：深耕学海，步步进阶</em></p>
+<p><em>1. 出身贵州普通家庭，历经多次转学依然潜心向学，高考以贵州省文科第五名的优异成绩斩获高分。</em></p>
+<p><em>2. 2008年拒绝北京大学录取资格，选择香港中文大学经济系，凭全额奖学金完成本科学习，在校期间成绩优异，全面积累学术与综合能力。</em></p>
+<p><em>3. 本科毕业后毅然奔赴海外，贷款百万就读哈佛大学法学院法律博士（JD） ，攻克异国求学与学业压力，顺利完成顶尖学府学业，专业能力达到行业顶尖水平，且三年自主还清百万求学贷款。</em></p>
+<p><em>二、辩论赛事：以言为刃，斩获殊荣</em></p>
+<p><em>1. 2014年，代表香港中文大学参加第二届国际华语辩论邀请赛，助力团队拿下赛事冠军，个人斩获赛事最佳辩手荣誉，崭露顶尖思辨能力。</em></p>
+<p><em>2. 参与多场国际、华语顶级辩论赛事，赛场风格沉稳通透、逻辑缜密，多次拿下最佳辩手、优秀辩手称号，成为华语辩论界公认的实力派辩手。</em></p>
+<p><em>3. 2019年参加《奇葩说》第六季，凭借深刻的思辨能力、温柔有力的表达、通透的价值观，一路突围，最终斩获第六季奇葩说BBKing年度冠军，圈粉无数，成为大众心中的思辨标杆。</em></p>
+<p><em>三、职业发展：知行合一，深耕致远</em></p>
+<p><em>1. 毕业后入职全球顶级律所，深耕法律专业领域，凭借扎实的哈佛法学专业功底、严谨的职业素养，专注专业法务工作，坚守职业初心，专业能力备受行业认可。</em></p>
+<p><em>2. 深耕内容输出与认知分享领域，常年保持阅读与思考习惯，输出大量通透、治愈、有深度的人生观点与思辨内容，凭借正向的价值观与清醒的人生态度，成为当代青年励志代表。</em></p>
+<p><em>四、个人影响力：温柔力量，治愈人心</em></p>
+<p><em>多年来，詹青云始终以独立、清醒、坚韧的女性形象出圈，不靠噱头与流量，仅凭学识、格局与三观收获大众认可。她打破了“学霸刻板印象”，让大众看见，优秀可以温柔从容，清醒可以自带光芒。</em></p>
+<p><em>她的人生履历告诉每一个普通人：出身从不定义人生，境遇从不局限未来。所有看似轻松的光鲜，都是日积月累的沉淀；所有顺其自然的从容，都是全力以赴的铺垫。岁岁深耕，步履生花，这便是詹青云，于学海求索，于赛场绽放，于人生旷野，活成自己的万丈荣光。</em></p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>User226</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="http://example.com/2026/05/18/%E6%AD%A5%E5%B1%A5%E7%94%9F%E8%8A%B1%EF%BC%8C%E5%B2%81%E5%B2%81%E8%8D%A3%E5%85%89%EF%BD%9C%E8%A9%B9%E9%9D%92%E4%BA%91%E4%B8%AA%E4%BA%BA%E8%8D%A3%E8%AA%89%E4%B8%8E%E5%B1%A5%E5%8E%86%E5%85%A8%E8%AE%B0%E5%BD%95/">http://example.com/2026/05/18/%E6%AD%A5%E5%B1%A5%E7%94%9F%E8%8A%B1%EF%BC%8C%E5%B2%81%E5%B2%81%E8%8D%A3%E5%85%89%EF%BD%9C%E8%A9%B9%E9%9D%92%E4%BA%91%E4%B8%AA%E4%BA%BA%E8%8D%A3%E8%AA%89%E4%B8%8E%E5%B1%A5%E5%8E%86%E5%85%A8%E8%AE%B0%E5%BD%95/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Seek depth, not noise.</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Honor-Resume/"># Honor Resume</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2026/05/17/%E4%BB%A5%E6%80%9D%E8%BE%A8%E4%B8%BA%E5%85%89%EF%BC%8C%E4%BB%A5%E6%B8%A9%E6%9F%94%E7%AB%8B%E8%AE%BA%EF%BD%9C%E8%88%9E%E5%8F%B0%E4%B9%8B%E4%B8%8A%EF%BC%8C%E7%8B%AC%E4%B8%80%E6%97%A0%E4%BA%8C%E7%9A%84%E8%A9%B9%E9%9D%92%E4%BA%91/">以思辨为光，以温柔立论|舞台之上，独一无二的詹青云</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© User226 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+    </div>
+</body>
+
+</html>

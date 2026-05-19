@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="User226">
+
+
+
+
+
+<title>以思辨为光，以温柔立论|舞台之上，独一无二的詹青云 | Hexo</title>
+
+
+
+    <link rel="icon" href="/PhStudent.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const pagebody = document.getElementsByTagName('body')[0]
+
+            function setTheme(status) {
+
+                if (status === 'dark') {
+                    window.sessionStorage.theme = 'dark'
+                    pagebody.classList.add('dark-theme');
+
+                } else if (status === 'light') {
+                    window.sessionStorage.theme = 'light'
+                    pagebody.classList.remove('dark-theme');
+                }
+            };
+
+            setTheme(window.sessionStorage.theme)
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Zhan&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                <a class="menu-item" href="/archives">Posts</a>
+                
+                <a class="menu-item" href="/category">Categories</a>
+                
+                <a class="menu-item" href="/tag">Tags</a>
+                
+                <a class="menu-item" href="/about">About</a>
+                
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Zhan&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">
+                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M4.5 17.27q-.213 0-.356-.145T4 16.768t.144-.356t.356-.143h15q.213 0 .356.144q.144.144.144.357t-.144.356t-.356.143zm0-4.77q-.213 0-.356-.144T4 11.999t.144-.356t.356-.143h15q.213 0 .356.144t.144.357t-.144.356t-.356.143zm0-4.77q-.213 0-.356-.143Q4 7.443 4 7.23t.144-.356t.356-.143h15q.213 0 .356.144T20 7.23t-.144.356t-.356.144z"/></svg>
+                    <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Symbols Light by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="m12 12.708l-5.246 5.246q-.14.14-.344.15t-.364-.15t-.16-.354t.16-.354L11.292 12L6.046 6.754q-.14-.14-.15-.344t.15-.364t.354-.16t.354.16L12 11.292l5.246-5.246q.14-.14.345-.15q.203-.01.363.15t.16.354t-.16.354L12.708 12l5.246 5.246q.14.14.15.345q.01.203-.15.363t-.354.16t-.354-.16z"/></svg>
+                </div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                <a class="menu-item" href="/archives">Posts</a>
+                
+                <a class="menu-item" href="/category">Categories</a>
+                
+                <a class="menu-item" href="/tag">Tags</a>
+                
+                <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.classList.contains("active")) {
+            toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        } else {
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">以思辨为光，以温柔立论|舞台之上，独一无二的詹青云</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">User226</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">May 17, 2026&nbsp;&nbsp;9:56:56</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/Blog3/">Blog3</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h3 id="Lighted-by-Critical-Thinking-Grounded-in-Gentleness-On-Stage-The-One-and-Only-Zhan-Qingyun"><a href="#Lighted-by-Critical-Thinking-Grounded-in-Gentleness-On-Stage-The-One-and-Only-Zhan-Qingyun" class="headerlink" title="Lighted by Critical Thinking, Grounded in Gentleness|On Stage: The One-and-Only Zhan Qingyun"></a>Lighted by Critical Thinking, Grounded in Gentleness|On Stage: The One-and-Only Zhan Qingyun</h3><p>In the realm of Chinese-language debate and verbal expression, Zhan Qingyun stands as a most distinctive figure. Unlike the sharp, confrontational debating styles defined by cutting remarks and unyielding pressure, her delivery carries an innate gentle power. She speaks calmly yet resolutely, weaving rigorous logic with heartfelt empathy. She has shown the world that critical thinking is not quarrel, nor are viewpoints meant for confrontation. Truly refined expression lies in gentleness backed by strength, and clarity warmed by compassion.</p>
+<p>Zhan Qingyun rose to mainstream fame through I Can I BB. Making her debut in the sixth season without ostentatious posturing or sensational gimmicks, she relied solely on poised speech, profound reflection and sound values to advance steadily, ultimately claiming the season’s BBKing championship. She has become widely regarded as the “pinnacle of Chinese-language debate”.</p>
+<p>On stage, she never rushes to refute nor seeks to overpower opponents. For every debate topic, she rises above conventional mindsets, unpacking issues from the dimensions of humanity, personal growth, society and ideals. She connects with audiences through delicate empathy and frames arguments with rigorous logic. Her speeches are never empty inspirational cliches, but sincere reflections forged from life experience and self-understanding - embodying both intellectual depth and everyday human warmth.</p>
+<p>When discussing worldly reality and ideals, she neither glorifies unattainable loftiness nor belittles ordinary life. Instead, she reminds us that ideals are not distant fantasies, but perseverance woven into ordinary days. On choices and regrets, she accepts life’s imperfections with grace, teaching that every trade-off shapes growth and regret is an inherent part of life. On prejudice and tolerance, she maintains impartial clarity, respecting diverse life paths and gently dismantling social stereotypes.</p>
+<p>What moves people most is not her unassailable logic, but the tenderness and insight behind her critical thinking. Many debaters excel at asserting views and persuading others, while Zhan Qingyun inspires reflection and heals hearts. Her words carry no aggression yet possess piercing depth. Those who listen rarely receive forced lectures; instead, they pause to re-examine their lives, decisions and obsessions.</p>
+<p>Beyond her television stardom, Zhan Qingyun is a veteran powerhouse in professional Chinese-language debate. Early in her career, representing the Chinese University of Hong Kong in international tournaments, she secured championships and Best Debater awards through solid foundations and steady on-site performance, cementing her standing in professional debate circles.</p>
+<p>Away from the spotlight, Zhan Qingyun retains the purity and discernment of a lifelong scholar. She shuns online clout and self-promotion, devoting herself to her passion, independent thinking and continuous self-improvement. An avid reader and thoughtful observer, she remains humble despite seeing the breadth of the world, and sincere amid life’s compromises.</p>
+<p>Many say Zhan Qingyun has redefined the power of gentleness. True strength is not brash sharpness or intimidation, but composure after life’s journeys, gentleness amid understanding, and sincerity despite insight into human nature. Clad in critical thought as her armour and grounded in gentleness, she lives with clarity, independence and poise - the one-of-a-kind, irreplaceable Zhan Qingyun.</p>
+<p><em>在华语辩论和语言表达的舞台上，詹青云是最特别的存在。不同于犀利尖锐、咄咄逼人的辩论风格，她的表达始终自带一种温柔的力量，娓娓道来却字字铿锵，逻辑缜密却共情人心。她让所有人看见，思辨不是争执，观点不是对抗，真正高级的表达，是温柔且有力量，清醒亦有温度。</em></p>
+<p><em>真正让大众熟知詹青云的，是《奇葩说》的舞台。第六季登场的她，没有张扬的姿态，没有刻意的噱头，仅凭沉稳的谈吐、深刻的思考、通透的三观，一路过关斩将，最终拿下当季BBKing冠军，成为无数人心中的“辩论天花板”。</em></p>
+<p><em>在舞台上，她从不急于反驳、从不刻意碾压对手。面对每一个辩题，她总能跳出世俗固化思维，从人性、成长、社会、理想的多角度拆解问题，用细腻的共情读懂人心，用严谨的逻辑梳理观点。她的发言从来不是空洞的鸡汤，而是结合自身阅历、认知沉淀的真诚分享，既有知识分子的深度，又有普通人的烟火共情。</em></p>
+<p><em>她聊世俗与理想，从不鼓吹不切实际的清高，也不贬低平凡的烟火，而是告诉大家：理想从来不是遥不可及的空想，是藏在平凡生活里的坚守；她聊选择与遗憾，坦然接纳人生的不完美，告诉众人所有取舍皆是成长，遗憾亦是人生常态；她聊偏见与包容，始终保持清醒的中立，尊重每一种不同的人生，温柔拆解世俗的刻板印象。</em></p>
+<p><em>最动人的从来不是她无懈可击的逻辑，而是她藏在思辨背后的温柔与通透。很多辩手擅长输出观点、说服他人，而詹青云擅长启发思考、治愈人心。她的语言没有攻击性，却有穿透力，听过她发言的人，很少会被强行灌输道理，反而会不自觉静下心来，重新审视自己的人生、自己的选择、自己的执念。</em></p>
+<p><em>除了综艺舞台的绽放，詹青云深耕辩论赛场多年，早已是华语辩论界的实力派。早年代表香港中文大学征战国际华语辩论赛事，凭借扎实的功底、沉稳的临场发挥，拿下赛事冠军与最佳辩手荣誉，在专业辩论领域站稳脚跟。</em></p>
+<p><em>褪去舞台光环，詹青云始终保持着读书人的纯粹与清醒。她不迎合流量、不刻意炒作，始终深耕热爱的领域，坚持独立思考、持续输入成长。她热爱阅读、善于沉淀，见过世界的广阔，依然保持谦卑；历经人生的取舍，依然坚守真诚。</em></p>
+<p><em>有人说，詹青云重新定义了温柔的力量。真正的强大，不是锋芒毕露、咄咄逼人，而是阅尽千帆依然从容，通晓事理依然温柔，洞悉人性依然赤诚。以思辨为铠甲，以温柔为底色，清醒独立、从容自在，这便是独一无二、无可替代的詹青云。</em></p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>User226</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="http://example.com/2026/05/17/%E4%BB%A5%E6%80%9D%E8%BE%A8%E4%B8%BA%E5%85%89%EF%BC%8C%E4%BB%A5%E6%B8%A9%E6%9F%94%E7%AB%8B%E8%AE%BA%EF%BD%9C%E8%88%9E%E5%8F%B0%E4%B9%8B%E4%B8%8A%EF%BC%8C%E7%8B%AC%E4%B8%80%E6%97%A0%E4%BA%8C%E7%9A%84%E8%A9%B9%E9%9D%92%E4%BA%91/">http://example.com/2026/05/17/%E4%BB%A5%E6%80%9D%E8%BE%A8%E4%B8%BA%E5%85%89%EF%BC%8C%E4%BB%A5%E6%B8%A9%E6%9F%94%E7%AB%8B%E8%AE%BA%EF%BD%9C%E8%88%9E%E5%8F%B0%E4%B9%8B%E4%B8%8A%EF%BC%8C%E7%8B%AC%E4%B8%80%E6%97%A0%E4%BA%8C%E7%9A%84%E8%A9%B9%E9%9D%92%E4%BA%91/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Seek depth, not noise.</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Stage-Persona/"># Stage Persona</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2026/05/18/%E6%AD%A5%E5%B1%A5%E7%94%9F%E8%8A%B1%EF%BC%8C%E5%B2%81%E5%B2%81%E8%8D%A3%E5%85%89%EF%BD%9C%E8%A9%B9%E9%9D%92%E4%BA%91%E4%B8%AA%E4%BA%BA%E8%8D%A3%E8%AA%89%E4%B8%8E%E5%B1%A5%E5%8E%86%E5%85%A8%E8%AE%B0%E5%BD%95/">步履生花，岁岁荣光｜詹青云个人荣誉与履历全记录</a>
+            
+            
+            <a class="next" rel="next" href="/2026/05/16/%E5%B1%B1%E6%B2%B3%E6%B1%82%E5%AD%A6%E8%B7%AF%EF%BC%8C%E6%B8%A9%E6%9F%94%E4%BA%A6%E5%9D%9A%E5%AE%9A%EF%BD%9C%E8%A9%B9%E9%9D%92%E4%BA%91%EF%BC%9A%E6%8A%8A%E5%B9%B3%E5%87%A1%E4%BA%BA%E7%94%9F%E8%B5%B0%E5%87%BA%E6%97%B7%E9%87%8E%E6%98%9F%E5%85%89/">山河求学路，温柔亦坚定｜詹青云：把平凡人生走出旷野星光</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© User226 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+    </div>
+</body>
+
+</html>

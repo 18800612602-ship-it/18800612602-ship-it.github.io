@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="User226">
+
+
+
+
+
+<title>山河求学路，温柔亦坚定｜詹青云：把平凡人生走出旷野星光 | Hexo</title>
+
+
+
+    <link rel="icon" href="/PhStudent.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const pagebody = document.getElementsByTagName('body')[0]
+
+            function setTheme(status) {
+
+                if (status === 'dark') {
+                    window.sessionStorage.theme = 'dark'
+                    pagebody.classList.add('dark-theme');
+
+                } else if (status === 'light') {
+                    window.sessionStorage.theme = 'light'
+                    pagebody.classList.remove('dark-theme');
+                }
+            };
+
+            setTheme(window.sessionStorage.theme)
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Zhan&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                <a class="menu-item" href="/archives">Posts</a>
+                
+                <a class="menu-item" href="/category">Categories</a>
+                
+                <a class="menu-item" href="/tag">Tags</a>
+                
+                <a class="menu-item" href="/about">About</a>
+                
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Zhan&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">
+                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M4.5 17.27q-.213 0-.356-.145T4 16.768t.144-.356t.356-.143h15q.213 0 .356.144q.144.144.144.357t-.144.356t-.356.143zm0-4.77q-.213 0-.356-.144T4 11.999t.144-.356t.356-.143h15q.213 0 .356.144t.144.357t-.144.356t-.356.143zm0-4.77q-.213 0-.356-.143Q4 7.443 4 7.23t.144-.356t.356-.143h15q.213 0 .356.144T20 7.23t-.144.356t-.356.144z"/></svg>
+                    <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Symbols Light by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="m12 12.708l-5.246 5.246q-.14.14-.344.15t-.364-.15t-.16-.354t.16-.354L11.292 12L6.046 6.754q-.14-.14-.15-.344t.15-.364t.354-.16t.354.16L12 11.292l5.246-5.246q.14-.14.345-.15q.203-.01.363.15t.16.354t-.16.354L12.708 12l5.246 5.246q.14.14.15.345q.01.203-.15.363t-.354.16t-.354-.16z"/></svg>
+                </div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                <a class="menu-item" href="/archives">Posts</a>
+                
+                <a class="menu-item" href="/category">Categories</a>
+                
+                <a class="menu-item" href="/tag">Tags</a>
+                
+                <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.classList.contains("active")) {
+            toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        } else {
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">山河求学路，温柔亦坚定｜詹青云：把平凡人生走出旷野星光</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">User226</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">May 16, 2026&nbsp;&nbsp;9:18:08</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/Blog2/">Blog2</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h3 id="A-Scholarly-Journey-Across-Mountains-and-Rivers-Gentle-Yet-Resolute｜Zhan-Qingyun-Turning-an-Ordinary-Life-into-a-Vast-Star‑lit-Path"><a href="#A-Scholarly-Journey-Across-Mountains-and-Rivers-Gentle-Yet-Resolute｜Zhan-Qingyun-Turning-an-Ordinary-Life-into-a-Vast-Star‑lit-Path" class="headerlink" title="A Scholarly Journey Across Mountains and Rivers, Gentle Yet Resolute｜Zhan Qingyun: Turning an Ordinary Life into a Vast, Star‑lit Path"></a>A Scholarly Journey Across Mountains and Rivers, Gentle Yet Resolute｜Zhan Qingyun: Turning an Ordinary Life into a Vast, Star‑lit Path</h3><p>Many people first got to know Zhan Qingyun from her poised, gentle yet powerful speeches on The Great Debaters. They were dazzled by her articulate reasoning and broad vision. Away from the spotlight, however, she was never a born prodigy with an easy life—only an ordinary person walking steadily forward and growing lifelong. Her life is a journey of learning across mountains and seas, the finest example of an ordinary soul rising against the odds through persistence and self‑awareness.</p>
+<p>Born in 1990 into an ordinary family in Guizhou, Zhan Qingyun’s father was a factory worker and her mother a high‑school English teacher. Her childhood lacked privileged resources, nor did she display extraordinary talent early on. In fact, her academic performance was mediocre in her early school years, and she was even doubted by teachers. She moved schools six times from primary through high school. Frequent changes of environment and unfamiliar campuses never dimmed her spirit; instead, they shaped her steady, perceptive and observant character. The tolerant, encouraging upbringing from her parents gave her the warmest foundation for growth, keeping her curious about the world and eager for knowledge.</p>
+<p>Her life turned a corner through steady self‑reflection and awakening. After junior high school, Zhan gradually found her own study rhythm, making consistent progress and leaping forward academically, which earned her admission to a top high school. In the 2008 college entrance examination, she ranked fifth among liberal‑arts students in Guizhou Province with outstanding scores, receiving offers from both Peking University and the Chinese University of Hong Kong. Contrary to public expectation that she would enter Peking University, she made her first surprising choice: she turned down PKU and opted for the Department of Economics at the Chinese University of Hong Kong.</p>
+<p>Far from impulsive, this decision came from sober judgment. The Chinese University of Hong Kong offered her a full scholarship, easing the financial burden on her ordinary family and allowing her to pursue her studies freely. During her undergraduate years there, she kept forging ahead, delving into her major and broadening her horizons. She also devoted herself to debate, honing her logical thinking and expressive skills, laying groundwork for her later success.</p>
+<p>After graduation, she made another life‑changing choice that shocked many. To pursue her dream of top‑tier legal studies, she boldly took out a million‑yuan loan to study for a Doctor of Laws degree at Harvard University. Burdened by heavy debt, loneliness of studying abroad and fierce competition at an elite university, she never backed down. At Harvard, she focused wholeheartedly on her studies and polished her professional competence. Through extreme self‑discipline and solid capability, she completed her degree successfully and paid off all loans within three years, keeping her promise to herself.</p>
+<p>From a small town in Guizhou to county towns, Hong Kong and Boston, from an average student to a Harvard Doctor of Laws, Zhan Qingyun’s academic journey had no shortcuts—only day‑in‑day‑out persistence and self‑awareness. She never followed conventional norms blindly, nor let age, circumstances or family background define her. She always followed her heart and gave her all to what she loved.</p>
+<p>The world admires the smooth paths of geniuses, yet Zhan Qingyun reminds us: </p>
+<h3 id="true-excellence-never-stems-from-innate-talent-but-from-courage-in-facing-hardships-consistent-dedication-and-unwavering-faith-in-oneself-Born-ordinary-one-can-still-journey-across-mountains-and-seas-keep-walking-and-stars-will-shine-for-you"><a href="#true-excellence-never-stems-from-innate-talent-but-from-courage-in-facing-hardships-consistent-dedication-and-unwavering-faith-in-oneself-Born-ordinary-one-can-still-journey-across-mountains-and-seas-keep-walking-and-stars-will-shine-for-you" class="headerlink" title="true excellence never stems from innate talent, but from courage in facing hardships, consistent dedication, and unwavering faith in oneself. Born ordinary, one can still journey across mountains and seas; keep walking, and stars will shine for you."></a>true excellence never stems from innate talent, but from courage in facing hardships, consistent dedication, and unwavering faith in oneself. Born ordinary, one can still journey across mountains and seas; keep walking, and stars will shine for you.</h3><p><em>很多人认识詹青云，始于《奇葩说》舞台上条理清晰、温柔有力的发言，惊艳于她出口成章的思辨与格局。但褪去聚光灯，她从来不是天生开挂的天才，只是一个踏实赶路、终身成长的普通人。她的人生，是一场跨越山海的求学修行，是普通人靠坚持与清醒，逆风生长的最好模样。</em></p>
+<p><em>1990年，詹青云出生在贵州一个普通家庭，父亲是工人，母亲是高中英语老师。她的童年没有优越的资源，也没有早早展露过人天赋，甚至求学初期成绩平平，还曾被老师否定。年少的她辗转求学，小学到高中历经六次转学，频繁的环境变动、陌生的校园氛围，没有消磨她的心智，反而让她养成了沉稳、通透、善于观察的性格。父母包容鼓励的教育方式，成为她成长路上最温暖的底气，让她始终保有对世界的好奇和对知识的渴望。</em></p>
+<p><em>她的人生转折点，始于踏实的沉淀与觉醒。初中之后，詹青云慢慢找到适合自己的学习节奏，稳步深耕、持续精进，成绩实现跨越式提升，顺利考入优质高中。2008年高考，她以贵州省文科第五名的优异成绩，拿下亮眼分数，同时收到了北京大学与香港中文大学的录取通知。在所有人都以为她会顺势踏入顶尖学府北大时，她做出了第一次让人意外的选择：拒绝北大，选择香港中文大学经济系。</em></p>
+<p><em>这个选择从不是任性，而是清醒的权衡。彼时香港中文大学为她提供全额奖学金，能够减轻普通家庭的经济压力，让她可以无负担追逐学业。在香港中文大学的求学时光里，她从未停下脚步，深耕专业、拓宽视野，同时深耕热爱的辩论领域，不断锻炼自己的逻辑思维与表达能力，为日后的绽放埋下伏笔。</em></p>
+<p><em>本科毕业之后，她再次做出了一场轰动众人的人生抉择。为了奔赴心中顶尖的法学梦想，她毅然选择贷款百万，远赴哈佛大学攻读法律博士。百万负债的压力、异国求学的孤独、顶尖学府的激烈竞争，没有让她退缩。在哈佛的日子里，她沉下心深耕专业，打磨专业能力，凭借极致的自律和过硬的实力，顺利完成学业，更在三年内还清所有贷款，完美兑现了对自己的承诺。</em></p>
+<p><em>从贵州小城出发，辗转县城、香港、波士顿，从普通学子到哈佛法律博士，詹青云的求学路，没有捷径，只有日复一日的坚持与清醒。她从不盲从世俗的标准答案，不被年龄、处境、出身定义，始终遵从本心，为热爱全力以赴。</em></p>
+<p><em>世人偏爱天才的顺遂，而詹青云告诉我们：真正的优秀，从不是与生俱来的天赋，而是直面困境的勇气、持之以恒的深耕，以及永远忠于本心的坚定。平凡出身，亦可奔赴山海，步履不停，终能遇见星光。</em></p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>User226</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="http://example.com/2026/05/16/%E5%B1%B1%E6%B2%B3%E6%B1%82%E5%AD%A6%E8%B7%AF%EF%BC%8C%E6%B8%A9%E6%9F%94%E4%BA%A6%E5%9D%9A%E5%AE%9A%EF%BD%9C%E8%A9%B9%E9%9D%92%E4%BA%91%EF%BC%9A%E6%8A%8A%E5%B9%B3%E5%87%A1%E4%BA%BA%E7%94%9F%E8%B5%B0%E5%87%BA%E6%97%B7%E9%87%8E%E6%98%9F%E5%85%89/">http://example.com/2026/05/16/%E5%B1%B1%E6%B2%B3%E6%B1%82%E5%AD%A6%E8%B7%AF%EF%BC%8C%E6%B8%A9%E6%9F%94%E4%BA%A6%E5%9D%9A%E5%AE%9A%EF%BD%9C%E8%A9%B9%E9%9D%92%E4%BA%91%EF%BC%9A%E6%8A%8A%E5%B9%B3%E5%87%A1%E4%BA%BA%E7%94%9F%E8%B5%B0%E5%87%BA%E6%97%B7%E9%87%8E%E6%98%9F%E5%85%89/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Seek depth, not noise.</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Growth-Story/"># Growth Story</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2026/05/17/%E4%BB%A5%E6%80%9D%E8%BE%A8%E4%B8%BA%E5%85%89%EF%BC%8C%E4%BB%A5%E6%B8%A9%E6%9F%94%E7%AB%8B%E8%AE%BA%EF%BD%9C%E8%88%9E%E5%8F%B0%E4%B9%8B%E4%B8%8A%EF%BC%8C%E7%8B%AC%E4%B8%80%E6%97%A0%E4%BA%8C%E7%9A%84%E8%A9%B9%E9%9D%92%E4%BA%91/">以思辨为光，以温柔立论|舞台之上，独一无二的詹青云</a>
+            
+            
+            <a class="next" rel="next" href="/2026/05/15/Ganglha%E2%80%91Khandro/">Ganglha-Khandro</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© User226 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+    </div>
+</body>
+
+</html>
