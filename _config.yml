@@ -104,4 +104,4 @@ deploy:
   type: git
   repo: https://github.com/18800612602-ship-it/18800612602-ship-it.github.io.git
   #repository: git@github.com/18800612602-ship-it/18800612602-ship-it.github.io.git
-  branch: master
+  branch: gh-pages
